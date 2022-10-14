@@ -1,4 +1,4 @@
-## /route
+## /routes
 original api(with description) url: [https://aviationstack.com/documentation](https://aviationstack.com/documentation)
 
 : provide data about airline routes

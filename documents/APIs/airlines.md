@@ -3,13 +3,16 @@ original api(with description) url: [https://aviationstack.com/documentation](ht
 
 : get data about global airlines
 
-Example response:
+Parameters:
 
 | Object        |  Description          |
 | ------------- |:-------------|
 |  airline_name  | Filter results by providing the full name of the airline. |
 |  iata_code   |   Filter results by providing the iata code of the airline.  |
 | icao_code |   Filter results by providing the icao code of the airline. |
+
+
+Example response:
 
 ```json
 {
