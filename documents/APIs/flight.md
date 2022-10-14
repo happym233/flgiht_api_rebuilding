@@ -28,7 +28,7 @@ Parameters:
 
 Example response:
     
-```
+```json
 {
     "data": [
         {
