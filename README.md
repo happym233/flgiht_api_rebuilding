@@ -7,6 +7,8 @@ APIs to rebuild:
 2. [/routes](/documents/APIs/routes.md)
 3. [/airlines](/documents/APIs/airlines.md)
 4. [/airplanes](/documents/APIs/airplanes.md)
+5. [/aircraft_types](/documents/APIs/aircraft_types.md)
+6. 
 
 (reference: [https://aviationstack.com/documentation](https://aviationstack.com/documentation))
 
