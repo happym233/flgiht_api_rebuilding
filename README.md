@@ -12,6 +12,12 @@ APIs to rebuild:
 7. [/cities](/documents/APIs/cities.md)
 8. [/countries](/documents/APIs/countries.md)
  
+Design documents:
+
+1. [class diagram](/documents/design_documents/class_diagram.md)
+2. [E-R diagram](/documents/design_documents/ER_diagram.md)
+3. [data source architecture](/documents/design_documents/data_source.md)
+ 
 (reference: [https://aviationstack.com/documentation](https://aviationstack.com/documentation))
 
     
