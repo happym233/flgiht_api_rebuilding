@@ -9,7 +9,9 @@ APIs to rebuild:
 4. [/airplanes](/documents/APIs/airplanes.md)
 5. [/aircraft_types](/documents/APIs/aircraft_types.md)
 6. [/aviation_taxes](/documents/APIs/aviation_taxes.md)
-
+7. [/cities](/documents/APIs/cities.md)
+8. [/countries](/documents/APIs/countries.md)
+ 
 (reference: [https://aviationstack.com/documentation](https://aviationstack.com/documentation))
 
     
