@@ -45,8 +45,6 @@ Example response:
                 "scheduled": "2019-12-12T04:20:00+00:00",
                 "estimated": "2019-12-12T04:20:00+00:00",
                 "actual": "2019-12-12T04:20:13+00:00",
-                "estimated_runway": "2019-12-12T04:20:13+00:00",
-                "actual_runway": "2019-12-12T04:20:13+00:00"
             },
             "arrival": {
                 "airport": "Dallas/Fort Worth International",
@@ -60,8 +58,6 @@ Example response:
                 "scheduled": "2019-12-12T04:20:00+00:00",
                 "estimated": "2019-12-12T04:20:00+00:00",
                 "actual": null,
-                "estimated_runway": null,
-                "actual_runway": null
             },
             "airline": {
                 "name": "American Airlines",
