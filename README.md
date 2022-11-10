@@ -15,6 +15,7 @@ Design documents:
 
 1. [class diagram](/documents/design_documents/class_diagram.md)
 2. [data source architecture](/documents/design_documents/data_source.md)
+3. [database](/documents/database/database_tables.md)
  
 (reference: [https://aviationstack.com/documentation](https://aviationstack.com/documentation))
 
