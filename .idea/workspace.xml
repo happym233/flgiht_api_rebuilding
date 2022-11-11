@@ -5,21 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6a1131d-6ef5-4752-b908-3d17cbecca5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/documents/design_documents/design_patterns.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/figures/dataSourceSequence.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/figures/factoryClassDiagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/figures/factoryDesignPattern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/java/project/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/java/project/src/main/java/project/entity/ActualAirport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/java/project/src/main/java/project/entity/Airline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/java/project/src/main/java/project/entity/Airport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/java/project/src/main/java/project/entity/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/java/project/src/main/java/project/entity/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/java/project/src/main/java/project/entity/Flight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/java/project/src/main/java/project/entity/LiveFlightData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/java/project/src/main/java/project/entity/ScheduledAirport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes/java/project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/java/project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/design_documents/data_source.md" beforeDir="false" afterPath="$PROJECT_DIR$/documents/design_documents/data_source.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/design_patterns/design_patterns.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/java/.idea/java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/java/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/java/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/java/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/java/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/java/project/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/java/project/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/java/project/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/java/project/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/java/project/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/java/project/project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/java/project/src/main/java/project/entity/AircraftType.java" beforeDir="false" afterPath="$PROJECT_DIR$/codes/java/project/src/main/java/project/entity/AircraftType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="main" />
@@ -53,6 +72,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2Fps5z3ckCCh35sXPgveDS95Lxd" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -68,14 +94,14 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "aspect.path.notification.shown": "true",
-    "last_opened_file_path": "D:/Documents/soen 6441/flgiht_api_rebuilding/documents/figures",
+    "last_opened_file_path": "D:/Documents/soen 6441/flgiht_api_rebuilding/codes/java/project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
