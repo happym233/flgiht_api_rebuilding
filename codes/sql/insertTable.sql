@@ -12,7 +12,7 @@ INSERT INTO Cites
 
 
 INSERT INTO Airlines
-(airlineId,airlineName,iataCode,iataPrefixAccounting,icaoCode,callsign,airlineType,status,fleetSize,fleetAverageAge,dateFounded,hubCode,countryId) VALUE
+(airlineId,airlineName,iataCode,iataPrefixAccounting,icaoCode,callsign,airlineType,status,fleetSize,fleetAverageAge,dateFounded,hubCode,countryId) VALUES
 ("1","American Airlines","AA","1","AAL","AMERICAN","scheduled","active","963","10.9","1934","DFW",),
 ("2","Delta Air Lines","DL","6","DAL","DELTA","scheduled,division","active","823","17","1928","ATL",),
 ("3","United Airlines","UA","16","UAL","UNITED","scheduled,division","active","715","13.8","1931","ORD",);
