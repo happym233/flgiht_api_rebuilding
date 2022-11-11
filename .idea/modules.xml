@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/flgiht_api_rebuilding.iml" filepath="$PROJECT_DIR$/.idea/flgiht_api_rebuilding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codes/java/project/project.iml" filepath="$PROJECT_DIR$/codes/java/project/project.iml" />
     </modules>
   </component>
 </project>
