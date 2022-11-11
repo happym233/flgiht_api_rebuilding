@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b6a1131d-6ef5-4752-b908-3d17cbecca5d" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="Junteng_Ma" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="main" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Fps5z3ckCCh35sXPgveDS95Lxd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;aspect.path.notification.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Documents/soen 6441/flgiht_api_rebuilding/codes/java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\soen 6441\flgiht_api_rebuilding\documents\figures" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\soen 6441\flgiht_api_rebuilding" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="flgiht_api_rebuilding" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="flgiht_api_rebuilding" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6a1131d-6ef5-4752-b908-3d17cbecca5d" name="Changes" comment="" />
+      <created>1665200180856</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665200180856</updated>
+      <workItem from="1665200182175" duration="1203000" />
+      <workItem from="1665708368904" duration="7374000" />
+      <workItem from="1666145922423" duration="8781000" />
+      <workItem from="1668034571010" duration="6109000" />
+      <workItem from="1668047714536" duration="789000" />
+      <workItem from="1668135476809" duration="5721000" />
+    </task>
+    <task id="LOCAL-00001" summary="initialize fight api document">
+      <created>1665709790062</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665709790062</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initialize route api document">
+      <created>1665710856506</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665710856506</updated>
+    </task>
+    <task id="LOCAL-00003" summary="finish route api document">
+      <created>1665711478577</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665711478577</updated>
+    </task>
+    <task id="LOCAL-00004" summary="finish airline api document">
+      <created>1665712323445</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665712323446</updated>
+    </task>
+    <task id="LOCAL-00005" summary="initialize airplanes api document">
+      <created>1665712662217</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665712662217</updated>
+    </task>
+    <task id="LOCAL-00006" summary="finish airplanes api document">
+      <created>1665713009009</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665713009009</updated>
+    </task>
+    <task id="LOCAL-00007" summary="initialize aircraft types api document">
+      <created>1665713932751</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665713932751</updated>
+    </task>
+    <task id="LOCAL-00008" summary="finish aviation tax api document">
+      <created>1666146506491</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666146506491</updated>
+    </task>
+    <task id="LOCAL-00009" summary="finish country tax api document">
+      <created>1666147272264</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666147272264</updated>
+    </task>
+    <task id="LOCAL-00010" summary="initialize design documents">
+      <created>1666148798417</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666148798417</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update class diagram">
+      <created>1668038161459</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668038161459</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update data source architecture">
+      <created>1668039538495</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668039538495</updated>
+    </task>
+    <task id="LOCAL-00013" summary="initialize database">
+      <created>1668047938287</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668047938287</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update database design">
+      <created>1668138251682</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668138251682</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update database design">
+      <created>1668138330368</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668138330368</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update creating database sql">
+      <created>1668139858899</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668139858899</updated>
+    </task>
+    <task id="LOCAL-00017" summary="create inserting table sql">
+      <created>1668140030906</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668140030906</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update comments">
+      <created>1668140348742</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668140348742</updated>
+    </task>
+    <task id="LOCAL-00019" summary="intialize java">
+      <created>1668140782994</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668140782994</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initialize fight api document" />
+    <MESSAGE value="initialize route api document" />
+    <MESSAGE value="finish route api document" />
+    <MESSAGE value="finish airline api document" />
+    <MESSAGE value="initialize airplanes api document" />
+    <MESSAGE value="finish airplanes api document" />
+    <MESSAGE value="initialize aircraft types api document" />
+    <MESSAGE value="finish aviation tax api document" />
+    <MESSAGE value="finish country tax api document" />
+    <MESSAGE value="initialize design documents" />
+    <MESSAGE value="update class diagram" />
+    <MESSAGE value="update data source architecture" />
+    <MESSAGE value="initialize database" />
+    <MESSAGE value="update database design" />
+    <MESSAGE value="update creating database sql" />
+    <MESSAGE value="create inserting table sql" />
+    <MESSAGE value="update comments" />
+    <MESSAGE value="intialize java" />
+    <option name="LAST_COMMIT_MESSAGE" value="intialize java" />
+  </component>
+</project>
