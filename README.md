@@ -16,7 +16,7 @@ Design documents:
 1. [class diagram](/documents/design_documents/class_diagram.md)
 2. [data source architecture](/documents/design_documents/data_source.md)
 3. [database](/documents/database_design/database_tables.md)
-4. [design patterns](/documents/design_patterns/design_patterns.md)
+4. [design patterns](/documents/design_documents/design_patterns.md)
  
 codes:
 1. [database creating sql](/codes/sql/createTable.sql)
