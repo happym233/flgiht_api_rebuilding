@@ -17,6 +17,11 @@ Design documents:
 2. [data source architecture](/documents/design_documents/data_source.md)
 3. [database](/documents/database_design/database_tables.md)
  
+codes:
+1. [database creating sql](/codes/sql/createTable.sql)
+2. [database inserting sql](/codes/sql/insertTable.sql)
+3.
+ 
 (reference: [https://aviationstack.com/documentation](https://aviationstack.com/documentation))
 
     
