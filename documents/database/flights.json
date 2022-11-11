@@ -1,0 +1,158 @@
+{
+	"pagination": {
+		"limit": 3,
+		"offset": 0,
+		"count": 3,
+		"total": 264283
+	},
+	"data": [{
+		"flight_date": "2022-11-11",
+		"flight_status": "landed",
+		"departure": {
+			"airport": "Auckland International",
+			"timezone": "Pacific\/Auckland",
+			"iata": "AKL",
+			"icao": "NZAA",
+			"terminal": "D",
+			"gate": "24",
+			"delay": 24,
+			"scheduled": "2022-11-11T08:00:00+00:00",
+			"estimated": "2022-11-11T08:00:00+00:00",
+			"actual": "2022-11-11T08:24:00+00:00",
+			"estimated_runway": "2022-11-11T08:24:00+00:00",
+			"actual_runway": "2022-11-11T08:24:00+00:00"
+		},
+		"arrival": {
+			"airport": "Christchurch International",
+			"timezone": "Pacific\/Auckland",
+			"iata": "CHC",
+			"icao": "NZCH",
+			"terminal": "2",
+			"gate": "D18",
+			"baggage": null,
+			"delay": 6,
+			"scheduled": "2022-11-11T09:25:00+00:00",
+			"estimated": "2022-11-11T09:25:00+00:00",
+			"actual": "2022-11-11T09:30:00+00:00",
+			"estimated_runway": "2022-11-11T09:30:00+00:00",
+			"actual_runway": "2022-11-11T09:30:00+00:00"
+		},
+		"airline": {
+			"name": "EVA Air",
+			"iata": "BR",
+			"icao": "EVA"
+		},
+		"flight": {
+			"number": "3337",
+			"iata": "BR3337",
+			"icao": "EVA3337",
+			"codeshared": {
+				"airline_name": "air new zealand",
+				"airline_iata": "nz",
+				"airline_icao": "anz",
+				"flight_number": "523",
+				"flight_iata": "nz523",
+				"flight_icao": "anz523"
+			}
+		},
+		"aircraft": null,
+		"live": null
+	}, {
+		"flight_date": "2022-11-11",
+		"flight_status": "scheduled",
+		"departure": {
+			"airport": "Tancredo Neves International Airport",
+			"timezone": "America\/Sao_Paulo",
+			"iata": "CNF",
+			"icao": "SBCF",
+			"terminal": "1",
+			"gate": "22",
+			"delay": null,
+			"scheduled": "2022-11-11T06:15:00+00:00",
+			"estimated": "2022-11-11T06:15:00+00:00",
+			"actual": null,
+			"estimated_runway": null,
+			"actual_runway": null
+		},
+		"arrival": {
+			"airport": "Eurico Sales",
+			"timezone": "America\/Sao_Paulo",
+			"iata": "VIX",
+			"icao": "SBVT",
+			"terminal": null,
+			"gate": null,
+			"baggage": null,
+			"delay": null,
+			"scheduled": "2022-11-11T07:15:00+00:00",
+			"estimated": "2022-11-11T07:15:00+00:00",
+			"actual": null,
+			"estimated_runway": null,
+			"actual_runway": null
+		},
+		"airline": {
+			"name": "Azul",
+			"iata": "AD",
+			"icao": "AZU"
+		},
+		"flight": {
+			"number": "4715",
+			"iata": "AD4715",
+			"icao": "AZU4715",
+			"codeshared": null
+		},
+		"aircraft": null,
+		"live": null
+	}, {
+		"flight_date": "2022-11-11",
+		"flight_status": "scheduled",
+		"departure": {
+			"airport": "Hengyang",
+			"timezone": "Asia\/Shanghai",
+			"iata": "HNY",
+			"icao": "ZGHY",
+			"terminal": null,
+			"gate": "3,4",
+			"delay": null,
+			"scheduled": "2022-11-11T15:50:00+00:00",
+			"estimated": "2022-11-11T15:50:00+00:00",
+			"actual": null,
+			"estimated_runway": null,
+			"actual_runway": null
+		},
+		"arrival": {
+			"airport": "Shuangliu",
+			"timezone": "Asia\/Shanghai",
+			"iata": "CTU",
+			"icao": "ZUUU",
+			"terminal": "2",
+			"gate": null,
+			"baggage": null,
+			"delay": null,
+			"scheduled": "2022-11-11T17:55:00+00:00",
+			"estimated": "2022-11-11T17:55:00+00:00",
+			"actual": null,
+			"estimated_runway": null,
+			"actual_runway": null
+		},
+		"airline": {
+			"name": "China Southern Airlines",
+			"iata": "CZ",
+			"icao": "CSN"
+		},
+		"flight": {
+			"number": "2216",
+			"iata": "CZ2216",
+			"icao": "CSN2216",
+			"codeshared": {
+				"airline_name": "chengdu airlines",
+				"airline_iata": "eu",
+				"airline_icao": "uea",
+				"flight_number": "1830",
+				"flight_iata": "eu1830",
+				"flight_icao": "uea1830"
+			}
+		},
+		"aircraft": null,
+		"live": null
+	}]
+}
