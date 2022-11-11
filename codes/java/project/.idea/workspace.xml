@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80384f43-a0a4-4fcf-a682-82fd8ca34e6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../documents/design_documents/design_patterns.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../documents/figures/dataSourceSequence.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../documents/figures/factoryClassDiagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../documents/figures/factoryDesignPattern.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../documents/design_documents/data_source.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../documents/design_documents/data_source.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../documents/design_patterns/design_patterns.md" beforeDir="false" />
-    </list>
+    <list default="true" id="80384f43-a0a4-4fcf-a682-82fd8ca34e6f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
