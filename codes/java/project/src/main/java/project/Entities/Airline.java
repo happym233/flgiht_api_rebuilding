@@ -12,6 +12,7 @@ public class Airline {
     private Float fleetAverageAge;
     private Integer dateFounded;
     private String hubCode;
+    private Country country;
 
     public String getAirlineName() {
         return airlineName;
@@ -99,5 +100,11 @@ public class Airline {
 
     public void setHubCode(String hubCode) {
         this.hubCode = hubCode;
+    }
+    public Country getCountry() {
+        return country;
+    }
+    public void setCountry(Country country) {
+        this.country = country;
     }
 }

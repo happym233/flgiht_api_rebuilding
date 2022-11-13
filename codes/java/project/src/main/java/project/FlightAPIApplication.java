@@ -14,7 +14,7 @@ public class FlightAPIApplication {
         String command = "";
         while (!command.equals("q")) {
             System.out.print("Input your command(\"q\" to quit) > ");
-            command = scanner.next();
+            command = scanner.nextLine();
             if (command.equalsIgnoreCase("q") || command.equalsIgnoreCase("quit") || command.equalsIgnoreCase("exit"))
                 break;;
             System.out.println(handleCommand(command));

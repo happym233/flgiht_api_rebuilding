@@ -15,7 +15,7 @@ public class CityGatewayImpl implements CityGateway{
     private Connection connection;
 
     public CityGatewayImpl() {
-        this.connection =  SqliteConnector.getConnection();
+        this.connection = SqliteConnector.getConnection();
     }
 
     private String generateSql(City c) {
@@ -26,7 +26,6 @@ public class CityGatewayImpl implements CityGateway{
             return s;
         } else return selectPart;
     }
-
 
     public List<CityVO> search(City c) {
         List<CityVO> res = new ArrayList<>();
@@ -45,6 +44,7 @@ public class CityGatewayImpl implements CityGateway{
                 cvo.setGeonameId(resultSet.getString("geonameId"));
                 res.add(cvo);
             }
+            stmt.close();
             return res;
         } catch (SQLException e) {
             throw new RuntimeException(e);

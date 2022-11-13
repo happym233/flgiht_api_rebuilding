@@ -47,6 +47,7 @@ public class CountryGatewayImpl implements CountryGateway{
                 cvo.setPhonePrefix(resultSet.getString("phonePrefix"));
                 res.add(cvo);
             }
+            stmt.close();
             return res;
         } catch (SQLException e) {
             throw new RuntimeException(e);

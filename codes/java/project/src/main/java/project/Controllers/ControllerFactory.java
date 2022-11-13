@@ -13,6 +13,8 @@ public class ControllerFactory {
                 return new CountryController();
             case "city":
                 return new CityController();
+            case "airline":
+                return new AirlineController();
         }
         return null;
     }

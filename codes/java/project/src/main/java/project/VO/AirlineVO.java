@@ -118,4 +118,23 @@ public class AirlineVO {
     public void setCountryIso2(String countryIso2) {
         this.countryIso2 = countryIso2;
     }
+
+    @Override
+    public String toString() {
+        return "AirlineVO{" +
+                "arlineName='" + arlineName + '\'' +
+                ", iataCode='" + iataCode + '\'' +
+                ", iataPrefixAccounting='" + iataPrefixAccounting + '\'' +
+                ", icaoCode='" + icaoCode + '\'' +
+                ", callSign='" + callSign + '\'' +
+                ", type='" + type + '\'' +
+                ", status='" + status + '\'' +
+                ", fleetSize=" + fleetSize +
+                ", fleetAverageAge=" + fleetAverageAge +
+                ", dateFounded=" + dateFounded +
+                ", hubCode='" + hubCode + '\'' +
+                ", countryName='" + countryName + '\'' +
+                ", countryIso2='" + countryIso2 + '\'' +
+                '}';
+    }
 }
