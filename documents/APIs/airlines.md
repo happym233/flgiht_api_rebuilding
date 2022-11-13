@@ -5,12 +5,9 @@ original api(with description) url: [https://aviationstack.com/documentation](ht
 
 Parameters:
 
-| Object        |  Description          |
-| ------------- |:-------------|
-|  airline_name  | Filter results by providing the full name of the airline. |
-|  iata_code   |   Filter results by providing the iata code of the airline.  |
-| icao_code |   Filter results by providing the icao code of the airline. |
-
+| Object       |  Description          |
+|--------------|:-------------|
+| airline_name | Filter results by providing the full name of the airline. |
 
 Example response:
 
