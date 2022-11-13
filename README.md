@@ -5,9 +5,8 @@ APIs to rebuild:
 
 1. [/flights](/documents/APIs/flights.md) 
 2. [/airlines](/documents/APIs/airlines.md)
-3. [/aircraft_types](/documents/APIs/aircraft_types.md)
-4. [/cities](/documents/APIs/cities.md)
-5. [/countries](/documents/APIs/countries.md)
+3. [/cities](/documents/APIs/cities.md)
+4. [/countries](/documents/APIs/countries.md)
  
 Design documents:
 
