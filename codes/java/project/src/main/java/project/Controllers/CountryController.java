@@ -1,6 +1,7 @@
 package project.Controllers;
 
 import project.Entities.Country;
+import project.Exceptions.JsonException;
 import project.Mappers.Country.CountryMapper;
 import project.Mappers.Country.CountryMapperImpl;
 
@@ -42,10 +43,6 @@ public class CountryController implements Controller{
         return sb.toString();
     }
 
-    public String toJsonError() {
-        return "{ \"result\": \"Unknown parameter\" }";
-    }
-
     @Override
     public String handleParameter(String parameter) {
         if (parameter == null || parameter.length() == 0) {
@@ -57,10 +54,10 @@ public class CountryController implements Controller{
                 if (argu[0].equalsIgnoreCase("country_name")) {
                     return toJsonString(countryMapper.getCountryByName(argu[1]));
                 } else {
-                    return toJsonError();
+                    return JsonException.getJsonParameterExceptionMessage();
                 }
             }
-            return toJsonError();
+            return JsonException.getJsonParameterExceptionMessage();
         }
     }
 

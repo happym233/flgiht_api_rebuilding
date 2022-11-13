@@ -11,6 +11,8 @@ public class ControllerFactory {
         switch (s.toLowerCase()) {
             case "country":
                 return new CountryController();
+            case "city":
+                return new CityController();
         }
         return null;
     }

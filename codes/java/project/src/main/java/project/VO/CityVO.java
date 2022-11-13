@@ -73,4 +73,18 @@ public class CityVO {
     public void setGeonameId(String geonameId) {
         this.geonameId = geonameId;
     }
+
+    @Override
+    public String toString() {
+        return "CityVO{" +
+                "cityName='" + cityName + '\'' +
+                ", iataCode='" + iataCode + '\'' +
+                ", countryIso2='" + countryIso2 + '\'' +
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
+                ", timeZone='" + timeZone + '\'' +
+                ", gmt='" + gmt + '\'' +
+                ", geonameId='" + geonameId + '\'' +
+                '}';
+    }
 }

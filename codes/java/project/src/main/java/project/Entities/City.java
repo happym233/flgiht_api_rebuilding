@@ -8,6 +8,7 @@ public class City {
     private String timezone;
     private String gmt;
     private String geonameId;
+    private Country country;
 
     public String getCityName() {
         return cityName;
@@ -63,5 +64,13 @@ public class City {
 
     public void setGeonameId(String geonameId) {
         this.geonameId = geonameId;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public void setCountry(Country country) {
+        this.country = country;
     }
 }

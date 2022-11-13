@@ -2,6 +2,7 @@ package project;
 
 import project.Controllers.Controller;
 import project.Controllers.ControllerFactory;
+import project.Gateway.SqliteConnector;
 
 import java.util.Scanner;
 
@@ -18,6 +19,7 @@ public class FlightAPIApplication {
                 break;;
             System.out.println(handleCommand(command));
         }
+        SqliteConnector.close();
     }
 
     private String handleCommand(String command) {
