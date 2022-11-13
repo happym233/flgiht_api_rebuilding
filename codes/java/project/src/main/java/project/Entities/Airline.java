@@ -1,4 +1,4 @@
-package project.entity;
+package project.Entities;
 
 public class Airline {
     private String airlineName;

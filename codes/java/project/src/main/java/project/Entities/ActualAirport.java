@@ -1,7 +1,6 @@
-package project.entity;
+package project.Entities;
 
 import java.sql.Time;
-import java.sql.Timestamp;
 
 public class ActualAirport {
      private String gate;

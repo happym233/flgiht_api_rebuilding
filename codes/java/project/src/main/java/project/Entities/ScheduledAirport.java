@@ -1,4 +1,4 @@
-package project.entity;
+package project.Entities;
 
 public class ScheduledAirport {
     private String terminal;

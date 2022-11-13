@@ -6,10 +6,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SqliteConnector {
-   private String url;
+   private static String url = "jdbc:sqlite:D:/Documents/soen 6441/project_database/flights_test.db";
    private Connection connection;
+   private static SqliteConnector sqliteConnector = null;
 
-   public SqliteConnector(String url) {
+   private SqliteConnector() {
       try {
          this.url = url;
          this.connection = DriverManager.getConnection(url);
@@ -18,21 +19,21 @@ public class SqliteConnector {
       }
    }
 
-   public Connection getConnection() {
-      return connection;
-   }
-
-   public void close() {
-      try {
-          if (connection != null) {
-              connection.close();
-          }
-      } catch (SQLException ex) {
-          System.out.println(ex.getMessage());
+   public static Connection getConnection() {
+      if (sqliteConnector == null) {
+         sqliteConnector = new SqliteConnector();
       }
+      return sqliteConnector.connection;
    }
 
-   public static void main(String[] args) {
-      SqliteConnector sqliteConnector = new SqliteConnector("jdbc:sqlite:D:/Documents/soen 6441/project_database/flights_test.db");
+   public static void close() {
+      try {
+         if (sqliteConnector.connection != null) {
+            sqliteConnector.connection.close();
+         }
+         sqliteConnector = null;
+      } catch (SQLException e) {
+         e.printStackTrace();
+      }
    }
 }

@@ -1,4 +1,4 @@
-INSERT INTO Countries 
+INSERT INTO Country
 (countryId, countryName, countryIso2, countryIso3, countryIsoNumeric, population, capital, continent, currencyName, currencyCode, fipsCode, phonePrefix) VALUES
 (1, "New Zealand", "NZ", "NZL", 554, 4252277, "Wellington", "OC", "Dollar", "NZD", "NZ", "64"),
 (2, "Austria", "AT", "AUT", 40, 8205000, "Vienna", "EU", "Euro", "EUR", "AU", "43"),
@@ -8,7 +8,7 @@ INSERT INTO Countries
 (6, "Switzerland", "CH", "CHE", 756, 7581000, "Berne", "EU", "Franc", "CHF", "SZ", "41"),
 (7, "China", "CN", "CHN", 156, 1330044000, "Beijing", "AS", "Yuan Renminbi", "CNY", "CH", "86");
 
-INSERT INTO Cites
+INSERT INTO City
 (cityId, cityName, iataCode, latitude, longtitude, timezone, gmt, geonameId, countryId) VALUES
 (1, "Auckland", "AKL", -36.84846, 174.763331, "Pacific\/Auckland", "12", "2193733", 1),
 (2, "Queenstown", "UEE", -42.083332, 145.55, "Australia\/Hobart", "10", "2152272", 2),
@@ -21,7 +21,7 @@ INSERT INTO Cites
 (9, "Fuzhou", "FOC", 25.93123, 119.66923, "Asia\/Shanghai", "8", "1810821", 7),
 (10, "Dalian", "DLC", 38.96102, 121.53999, "Asia\/Shanghai", "8", "1814087",7);
 
-INSERT INTO Airlines
+INSERT INTO Airline
 (airlineId, airlineName, iataCode, iataPrefixAccounting, icaoCode, callsign, airlineType, status, fleetSize, fleetAverageAge, dateFounded, hubCode, countryId) VALUES
 (1, "Air New Zealand", "NZ", "86", "ANZ", "NEW ZEALAND", "scheduled", "active", 55, 7.6, 1940, "AKL", 1),
 (2, "Qantas", "QF", "81", "QFA", "Q LINK", "scheduled", "active", 118, 9.2, 1920, "TMW", 2),
@@ -29,7 +29,7 @@ INSERT INTO Airlines
 (4, "Silkair", "MI", "629", "SLK", "SILKAIR", "scheduled", "active", 30, 4, 1975, "SIN", 5),
 (5, "Sichuan Airlines", "3U", "876", "CSC", "SICHUAN", "scheduled", "active", 107, 4.8, 1986, "CTU", 7);
 
-INSERT INTO Airports
+INSERT INTO Airport
 (airportId, airportName, iata, icao, cityId) VALUES
 (1, "Auckland International", "AKL", "AKL", 1),
 (2, "Queenstown", "UEE", "YQNS", 2),
@@ -43,7 +43,7 @@ INSERT INTO Airports
 (10, "Dalian", "DLC", "ZYTL", 10);
 
 
-INSERT INTO ScheduledAirports
+INSERT INTO ScheduledAirport
 (scheduledAirportId, terminal, scheduledTime, airportId) VALUES
 (1, "D", "2022-11-13T07:00:00+00:00", 1),
 (2, "D", "2022-11-13T08:50:00+00:00", 2),
@@ -56,7 +56,7 @@ INSERT INTO ScheduledAirports
 (9, null, "2022-11-13T13:05:00+00:00", 9),
 (10, null, "2022-11-13T15:30:00+00:00", 10);
 
-INSERT INTO Routes
+INSERT INTO Route
 (routeId, departAirportId, arriveAirportId, airlineId) VALUES
 (1, 1, 2, 1),
 (2, 3, 4, 2),
@@ -64,7 +64,7 @@ INSERT INTO Routes
 (4, 7, 8, 4),
 (5, 9, 10, 5);
 
-INSERT INTO  ActualAirports
+INSERT INTO  ActualAirport
 (actualAirportId, gate, delay, baggage, estimateTime, actualTime, scheduledAirportId) VALUES
 (1, "30", 27, null, "2022-11-13T07:00:00+00:00", "2022-11-13T07:27:00+00:00", 1),
 (2, null, 9, null, "2022-11-13T08:50:00+00:00", "2022-11-13T09:00:00+00:00", 2),
@@ -77,7 +77,7 @@ INSERT INTO  ActualAirports
 (9, null, null, null, "2022-11-13T13:05:00+00:00", null, 9),
 (10, null, null, null, "2022-11-13T15:30:00+00:00", null, 10);
 
-INSERT INTO AircraftTypes
+INSERT INTO AircraftType
 (aircraftTypeId, aircraftName, iataCode) VALUES
 (1, "ZK-OYA", "A21N"),
 (2, "VH-VZJ", "B738"),
@@ -90,7 +90,7 @@ INSERT INTO LiveFlightData
 (2, "2022-11-12T21:37:48+00:00", 15.71, 76.82, 9753.6, 308.01, 947.304, 0, false);
 
 
-INSERT INTO Flights
+INSERT INTO Flight
 (flightId, flightDate, flightStatus, flightNumber, iata, icao, codeShared,  departAirportId, arriveAirportId, routeId, aircraftTypeId, liveFlightDataId) VALUES
 (1, "2022-11-13", "landed", "611", "NZ611", "ANZ611", null, 1, 2, 1, 1, null),
 (2, "2022-11-13", "landed", "162", "QF162", "QFA162", null, 3, 4, 2, 2, null),
