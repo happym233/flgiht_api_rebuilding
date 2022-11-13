@@ -22,7 +22,7 @@ public class CityGatewayImpl implements CityGateway{
         String selectPart = "select * from city left join country on city.countryId = country.countryId";
         if (c == null) return selectPart;
         else if (c.getCityName() != null) {
-            String s =  selectPart + " where countryName=\"" + c.getCityName() + "\"";
+            String s =  selectPart + " where cityName=\"" + c.getCityName() + "\"";
             return s;
         } else return selectPart;
     }

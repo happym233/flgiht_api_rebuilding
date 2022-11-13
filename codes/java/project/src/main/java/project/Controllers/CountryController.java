@@ -60,9 +60,4 @@ public class CountryController implements Controller{
             return JsonException.getJsonParameterExceptionMessage();
         }
     }
-
-    public static void main(String[] args) {
-        CountryController countryController = new CountryController();
-        System.out.println(countryController.handleParameter("countryName=China"));
-    }
 }
