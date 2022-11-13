@@ -1,4 +1,4 @@
-CREATE TABLE Countries
+CREATE TABLE Country
 (
     countryId         integer primary key autoincrement,
     countryName       varchar(20),
@@ -14,7 +14,7 @@ CREATE TABLE Countries
     phonePrefix       varchar(10)
 );
 
-CREATE TABLE Cities
+CREATE TABLE City
 (
     cityId     integer primary key autoincrement,
     cityName   varchar(50),
@@ -29,7 +29,7 @@ CREATE TABLE Cities
 );
 
 
-CREATE TABLE Airlines
+CREATE TABLE Airline
 (
     airlineId            integer primary key autoincrement,
     airlineName          varchar(50),
@@ -47,7 +47,7 @@ CREATE TABLE Airlines
     foreign key (countryId) references  Countries(countryId)
 );
 
-CREATE TABLE Airports
+CREATE TABLE Airport
 (
     airportId   integer primary key autoincrement,
     airportName varchar(50),
@@ -57,7 +57,7 @@ CREATE TABLE Airports
     foreign key (cityId) references  Cities(cityId)
 );
 
-CREATE TABLE ScheduledAirports
+CREATE TABLE ScheduledAirport
 (
     scheduledAirportId integer primary key autoincrement,
     terminal           varchar(50),
@@ -66,7 +66,7 @@ CREATE TABLE ScheduledAirports
     foreign key (airportId) references  Airports(airportId)
 );
 
-CREATE TABLE Routes
+CREATE TABLE Route
 (
     routeId         integer primary key autoincrement,
     departAirportId integer,
@@ -77,7 +77,7 @@ CREATE TABLE Routes
     foreign key (airlineId) references  Airlines(airlineId)
 );
 
-CREATE TABLE ActualAirports
+CREATE TABLE ActualAirport
 (
     actualAirportId    integer primary key autoincrement,
     gate               varchar(50),
@@ -90,7 +90,7 @@ CREATE TABLE ActualAirports
 );
 
 
-CREATE TABLE AircraftTypes
+CREATE TABLE AircraftType
 (
     aircraftTypeId integer primary key autoincrement,
     aircraftName   varchar(50),
@@ -111,12 +111,12 @@ CREATE TABLE LiveFlightData
 );
 
 
-CREATE TABLE Flights
+CREATE TABLE Flight
 (
     flightId         integer primary key autoincrement,
     flightDate       varchar(50),
     flightStatus     varchar(50),
-    number           integer,
+    flightNumber           integer,
     iata             varchar(50),
     icao             varchar(50),
     codeShared       varchar(50),

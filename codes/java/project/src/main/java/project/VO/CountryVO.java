@@ -1,6 +1,9 @@
-package project.entity;
+package project.VO;
 
-public class Country {
+import project.Entities.Country;
+
+public class CountryVO {
+
     private String countryName;
     private String countryIso2;
     private String countryIso3;
@@ -12,6 +15,9 @@ public class Country {
     private String currencyCode;
     private String fipsCode;
     private String phonePrefix;
+
+    public CountryVO() {
+    }
 
     public String getCountryName() {
         return countryName;
@@ -99,5 +105,22 @@ public class Country {
 
     public void setPhonePrefix(String phonePrefix) {
         this.phonePrefix = phonePrefix;
+    }
+
+    @Override
+    public String toString() {
+        return "CountryVO{" +
+                "countryName='" + countryName + '\'' +
+                ", countryIso2='" + countryIso2 + '\'' +
+                ", countryIso3='" + countryIso3 + '\'' +
+                ", countryIsoNumeric=" + countryIsoNumeric +
+                ", population=" + population +
+                ", capital='" + capital + '\'' +
+                ", continent='" + continent + '\'' +
+                ", currencyName='" + currencyName + '\'' +
+                ", currencyCode='" + currencyCode + '\'' +
+                ", fipsCode='" + fipsCode + '\'' +
+                ", phonePrefix='" + phonePrefix + '\'' +
+                '}';
     }
 }
