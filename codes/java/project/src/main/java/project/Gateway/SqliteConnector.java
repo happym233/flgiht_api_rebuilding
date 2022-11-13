@@ -1,12 +1,14 @@
 package project.Gateway;
 
 
+import project.Configuration;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SqliteConnector {
-   private static String url = "jdbc:sqlite:D:/Documents/soen 6441/project_database/flights_test.db";
+   private static String url = "jdbc:sqlite:" + Configuration.getDatabasePath();
    private Connection connection;
    private static SqliteConnector sqliteConnector = null;
 
