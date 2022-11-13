@@ -97,20 +97,6 @@ CREATE TABLE AircraftTypes
     iataCode       varchar(50)
 );
 
-CREATE TABLE LiveFlightData
-(
-    liveFlightDataId integer primary key autoincrement,
-    updated          datetime,
-    latitude         float,
-    longitude        float,
-    altitude         float,
-    direction        float,
-    speedHorizontal  float,
-    speedVertical    float,
-    isGround         boolean
-);
-
-
 CREATE TABLE Flights
 (
     flightId         integer primary key autoincrement,
@@ -124,10 +110,8 @@ CREATE TABLE Flights
     arriveAirportId  integer,
     routeId          integer,
     aircraftTypeId   integer,
-    liveFlightDataId integer,
     foreign key (departAirportId) references  ActualAirports(actualAirportId),
     foreign key (arriveAirportId) references  ActualAirports(actualAirportId),
     foreign key (routeId) references  Routes(routeId),
     foreign key (aircraftTypeId) references  AircraftTypes(aircraftTypeId),
-    foreign key (liveFlightDataId) references  LiveFlightData(liveFlightDataId)
 );

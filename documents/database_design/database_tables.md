@@ -98,21 +98,6 @@ AircraftTypes
 | aircraftName   | varchar(50)  |
 | iataCode       | varchar(50)  |
 
-LiveFlightData
-
-| variable name    | type     |
-|------------------|:---------|
-| liveFlightDataId | integer  |
-| updated          | datetime |
-| latitude         | float    |
-| longitude        | float    |
-| altitude         | float    |
-| direction        | float    |
-| speedHorizontal  | float    |
-| speedVertical    | float    |
-| isGround         | boolean  |
-
-
 Flights
 
 | variable name    | type        |
@@ -128,4 +113,3 @@ Flights
 | arriveAirportId  | integer     |
 | routeId          | integer     |
 | aircraftTypeId   | integer     |
-| liveFlightDataId | integer     |
