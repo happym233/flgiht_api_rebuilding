@@ -134,7 +134,7 @@ project structure:
 Interaction results:
 
 - sample results:
-![searching city by city_name](../figures/sample_results.png)
+![searching city by city_name](documents/figures/sample_results.png)
 
 - detailed results:
 [a record of interactions in terminal](/documents/results/interactions.pdf)
