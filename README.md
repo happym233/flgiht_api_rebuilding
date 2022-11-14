@@ -22,6 +22,7 @@ codes:
 
 project structure:
 
+```
 │  pom.xml
 │  project.iml
 │
@@ -128,6 +129,7 @@ project structure:
                     │
                     └─Country
                             CountryMapperImplTest.java
+```                            
  
 Interaction results:
 
