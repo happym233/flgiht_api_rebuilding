@@ -9,6 +9,8 @@ import project.Gateway.SqliteConnector;
 
 import java.sql.Connection;
 
+import static org.junit.Assert.assertEquals;
+
 /** 
 * AirlineGatewayImpl Tester. 
 * 
@@ -39,6 +41,7 @@ public void after() throws Exception {
 public void testSearch() throws Exception { 
 //TODO: Test goes here...
     AirlineGatewayImpl c = new AirlineGatewayImpl();
+    /*
     Airline test1 = new Airline();
     test1.setIataCode("3U");
     System.out.println(c.search(  test1  ));
@@ -50,11 +53,14 @@ public void testSearch() throws Exception {
     Airline test3 = new Airline();
     test3.setAirlineName("Sichuan Airlines");
     System.out.println(c.search(  test3  ));
+    */
 
     Airline test4 = new Airline();
     test4.setIcaoCode("CSC");
-    System.out.println(c.search(  test4  ));
+    //System.out.println(c.search(  test4  ));
 
+    String answer ="[AirlineVO{arlineName='Sichuan Airlines', iataCode='3U', iataPrefixAccounting='876', icaoCode='CSC', callSign='SICHUAN', type='scheduled', status='active', fleetSize=107, fleetAverageAge=4.8, dateFounded=1986, hubCode='CTU', countryName='China', countryIso2='CN'}]";
+    assertEquals(c.search(test4).toString(), answer);
     //assertEquals(test1.equals(test3) &&  test3.equals(test4), true);
 
 

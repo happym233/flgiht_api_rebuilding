@@ -45,9 +45,11 @@ public void testGetConnection() throws Exception {
 //TODO: Test goes here...
 
     Connection connection = sqliteConnector.getConnection();
-    System.out.println("It is connect to: "+connection);
+    //System.out.println("It is connect to: "+connection);
 
-    assertEquals(connection != null, true);
+    assertEquals(connection.isClosed(), false);
+
+    //assertEquals(connection != null, true);
 
     //FlightAPIApplication f = new FlightAPIApplication();
     //System.out.println(f.handleCommand("city"));

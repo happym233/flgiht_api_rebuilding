@@ -3,10 +3,13 @@ package test.project.Mappers.Airline;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import project.Entities.Airline;
 import project.Gateway.SqliteConnector;
 import project.Mappers.Airline.AirlineMapperImpl;
 
 import java.sql.Connection;
+
+import static org.junit.Assert.assertEquals;
 
 /** 
 * AirlineMapperImpl Tester. 
@@ -38,15 +41,30 @@ public void after() throws Exception {
 public void testGetAllAirlines() throws Exception { 
 //TODO: Test goes here...
     AirlineMapperImpl a = new AirlineMapperImpl();
-    System.out.println(a.getAllAirlines( ));
+    //System.out.println(a.getAllAirlines( ));
 
-    System.out.println(a.getAirlineByName("Silkair"));
+    //System.out.println(a.getAirlineByName("Silkair"));
 
-    System.out.println(a.getAirlineByIataCode("3U"));
+    String answer = "";
+    for (Airline c: a.getAirlineByName("Silkair")){
+        answer += c.getAirlineName();
+    }
+    assertEquals(answer, "Silkair");
 
-    System.out.println(a.getAirlineByIcaoCOdes("ANZ"));
+   // System.out.println(a.getAirlineByIataCode("3U"));
+    String answer2 = "";
+    for (Airline c: a.getAirlineByIataCode("3U")){
+        answer2 += c.getIataCode();
+    }
+    assertEquals(answer2, "3U");
 
-    System.out.println(a.getAirlineByMultipleData("Air New Zealand","NZ","ANZ"));
+    //System.out.println(a.getAirlineByIcaoCOdes("ANZ"));
+    String answer3 = "";
+    for (Airline c: a.getAirlineByIcaoCOdes("ANZ")){
+        answer3 += c.getIcaoCode();
+    }
+    assertEquals(answer3, "ANZ");
+
 
 } 
 

@@ -1,8 +1,14 @@
 package project.Entities;
 
-public class ScheduledAirport {
+import project.Configuration;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class ScheduledAirport extends Airport{
+    private SimpleDateFormat timeFormat = Configuration.getTimeFormat();
     private String terminal;
-    private String time;
+    private Date time;
 
     public String getTerminal() {
         return terminal;
@@ -12,11 +18,16 @@ public class ScheduledAirport {
         this.terminal = terminal;
     }
 
-    public String getTime() {
+    public Date getTime() {
         return time;
     }
 
-    public void setTime(String time) {
+    public String getScheduledTimeStr() {
+        if (time == null) return "";
+        return timeFormat.format(time);
+    }
+
+    public void setTime(Date time) {
         this.time = time;
     }
 }

@@ -1,11 +1,11 @@
 package project.VO;
 
-import java.sql.Date;
-import java.sql.Time;
+import java.util.Date;
 
 public class FlightVO {
     private Date flightDate;
     private String flightStates;
+    private int departureAirportId;
     private String departureAirportName;
     private String departureAirportTimeZone;
     private String departureAirportIata;
@@ -13,9 +13,10 @@ public class FlightVO {
     private String departureAirportTerminal;
     private String departureAirportGate;
     private int departureAirportDelay;
-    private Time departureAirportScheduled;
-    private Time departureAirportEstimated;
-    private Time departureAirportActual;
+    private Date departureAirportScheduled;
+    private Date departureAirportEstimated;
+    private Date departureAirportActual;
+    private int arrivalAirportId;
     private String arrivalAirportName;
     private String arrivalAirportTimezone;
     private String arrivalAirportIata;
@@ -23,10 +24,10 @@ public class FlightVO {
     private String arrivalAirportTerminal;
     private String arrivalAirportGate;
     private String arrivalAirportBaggage;
-    private String arrivalAirportDelay;
-    private String arrivalAirportScheduled;
-    private String arrivalAirportEstimated;
-    private String arrivalAirportActual;
+    private int arrivalAirportDelay;
+    private Date arrivalAirportScheduled;
+    private Date arrivalAirportEstimated;
+    private Date arrivalAirportActual;
     private String airlineName;
     private String airlineIata;
     private String airlineIcao;
@@ -34,15 +35,17 @@ public class FlightVO {
     private String flightIata;
     private String flightIcao;
     private String flightCode;
+    private int aircraftTypeId;
     private String aircraftName;
     private String aircraftIata;
-    private String liveUpdated;
-    private double liveLatitude;
-    private double liveLongitude;
-    private double liveAltitude;
-    private double liveDirection;
-    private double liveSpeedHorizontal;
-    private double liveSpeedVertical;
+    private int liveFlightDataId;
+    private Date liveUpdated;
+    private float liveLatitude;
+    private float liveLongitude;
+    private float liveAltitude;
+    private float liveDirection;
+    private float liveSpeedHorizontal;
+    private float liveSpeedVertical;
     private boolean liveIsGrounded;
 
     public Date getFlightDate() {
@@ -59,6 +62,14 @@ public class FlightVO {
 
     public void setFlightStates(String flightStates) {
         this.flightStates = flightStates;
+    }
+
+    public int getDepartureAirportId() {
+        return departureAirportId;
+    }
+
+    public void setDepartureAirportId(int departureAirportId) {
+        this.departureAirportId = departureAirportId;
     }
 
     public String getDepartureAirportName() {
@@ -117,28 +128,36 @@ public class FlightVO {
         this.departureAirportDelay = departureAirportDelay;
     }
 
-    public Time getDepartureAirportScheduled() {
+    public Date getDepartureAirportScheduled() {
         return departureAirportScheduled;
     }
 
-    public void setDepartureAirportScheduled(Time departureAirportScheduled) {
+    public void setDepartureAirportScheduled(Date departureAirportScheduled) {
         this.departureAirportScheduled = departureAirportScheduled;
     }
 
-    public Time getDepartureAirportEstimated() {
+    public Date getDepartureAirportEstimated() {
         return departureAirportEstimated;
     }
 
-    public void setDepartureAirportEstimated(Time departureAirportEstimated) {
+    public void setDepartureAirportEstimated(Date departureAirportEstimated) {
         this.departureAirportEstimated = departureAirportEstimated;
     }
 
-    public Time getDepartureAirportActual() {
+    public Date getDepartureAirportActual() {
         return departureAirportActual;
     }
 
-    public void setDepartureAirportActual(Time departureAirportActual) {
+    public void setDepartureAirportActual(Date departureAirportActual) {
         this.departureAirportActual = departureAirportActual;
+    }
+
+    public int getArrivalAirportId() {
+        return arrivalAirportId;
+    }
+
+    public void setArrivalAirportId(int arrivalAirportId) {
+        this.arrivalAirportId = arrivalAirportId;
     }
 
     public String getArrivalAirportName() {
@@ -197,35 +216,35 @@ public class FlightVO {
         this.arrivalAirportBaggage = arrivalAirportBaggage;
     }
 
-    public String getArrivalAirportDelay() {
+    public int getArrivalAirportDelay() {
         return arrivalAirportDelay;
     }
 
-    public void setArrivalAirportDelay(String arrivalAirportDelay) {
+    public void setArrivalAirportDelay(int arrivalAirportDelay) {
         this.arrivalAirportDelay = arrivalAirportDelay;
     }
 
-    public String getArrivalAirportScheduled() {
+    public Date getArrivalAirportScheduled() {
         return arrivalAirportScheduled;
     }
 
-    public void setArrivalAirportScheduled(String arrivalAirportScheduled) {
+    public void setArrivalAirportScheduled(Date arrivalAirportScheduled) {
         this.arrivalAirportScheduled = arrivalAirportScheduled;
     }
 
-    public String getArrivalAirportEstimated() {
+    public Date getArrivalAirportEstimated() {
         return arrivalAirportEstimated;
     }
 
-    public void setArrivalAirportEstimated(String arrivalAirportEstimated) {
+    public void setArrivalAirportEstimated(Date arrivalAirportEstimated) {
         this.arrivalAirportEstimated = arrivalAirportEstimated;
     }
 
-    public String getArrivalAirportActual() {
+    public Date getArrivalAirportActual() {
         return arrivalAirportActual;
     }
 
-    public void setArrivalAirportActual(String arrivalAirportActual) {
+    public void setArrivalAirportActual(Date arrivalAirportActual) {
         this.arrivalAirportActual = arrivalAirportActual;
     }
 
@@ -285,6 +304,14 @@ public class FlightVO {
         this.flightCode = flightCode;
     }
 
+    public int getAircraftTypeId() {
+        return aircraftTypeId;
+    }
+
+    public void setAircraftTypeId(int aircraftTypeId) {
+        this.aircraftTypeId = aircraftTypeId;
+    }
+
     public String getAircraftName() {
         return aircraftName;
     }
@@ -301,59 +328,67 @@ public class FlightVO {
         this.aircraftIata = aircraftIata;
     }
 
-    public String getLiveUpdated() {
+    public int getLiveFlightDataId() {
+        return liveFlightDataId;
+    }
+
+    public void setLiveFlightDataId(int liveFlightDataId) {
+        this.liveFlightDataId = liveFlightDataId;
+    }
+
+    public Date getLiveUpdated() {
         return liveUpdated;
     }
 
-    public void setLiveUpdated(String liveUpdated) {
+    public void setLiveUpdated(Date liveUpdated) {
         this.liveUpdated = liveUpdated;
     }
 
-    public double getLiveLatitude() {
+    public float getLiveLatitude() {
         return liveLatitude;
     }
 
-    public void setLiveLatitude(double liveLatitude) {
+    public void setLiveLatitude(float liveLatitude) {
         this.liveLatitude = liveLatitude;
     }
 
-    public double getLiveLongitude() {
+    public float getLiveLongitude() {
         return liveLongitude;
     }
 
-    public void setLiveLongitude(double liveLongitude) {
+    public void setLiveLongitude(float liveLongitude) {
         this.liveLongitude = liveLongitude;
     }
 
-    public double getLiveAltitude() {
+    public float getLiveAltitude() {
         return liveAltitude;
     }
 
-    public void setLiveAltitude(double liveAltitude) {
+    public void setLiveAltitude(float liveAltitude) {
         this.liveAltitude = liveAltitude;
     }
 
-    public double getLiveDirection() {
+    public float getLiveDirection() {
         return liveDirection;
     }
 
-    public void setLiveDirection(double liveDirection) {
+    public void setLiveDirection(float liveDirection) {
         this.liveDirection = liveDirection;
     }
 
-    public double getLiveSpeedHorizontal() {
+    public float getLiveSpeedHorizontal() {
         return liveSpeedHorizontal;
     }
 
-    public void setLiveSpeedHorizontal(double liveSpeedHorizontal) {
+    public void setLiveSpeedHorizontal(float liveSpeedHorizontal) {
         this.liveSpeedHorizontal = liveSpeedHorizontal;
     }
 
-    public double getLiveSpeedVertical() {
+    public float getLiveSpeedVertical() {
         return liveSpeedVertical;
     }
 
-    public void setLiveSpeedVertical(double liveSpeedVertical) {
+    public void setLiveSpeedVertical(float liveSpeedVertical) {
         this.liveSpeedVertical = liveSpeedVertical;
     }
 
@@ -363,5 +398,55 @@ public class FlightVO {
 
     public void setLiveIsGrounded(boolean liveIsGrounded) {
         this.liveIsGrounded = liveIsGrounded;
+    }
+
+    @Override
+    public String toString() {
+        return "FlightVO{" +
+                "flightDate=" + flightDate +
+                ", flightStates='" + flightStates + '\'' +
+                ", departureAirportId=" + departureAirportId +
+                ", departureAirportName='" + departureAirportName + '\'' +
+                ", departureAirportTimeZone='" + departureAirportTimeZone + '\'' +
+                ", departureAirportIata='" + departureAirportIata + '\'' +
+                ", departureAirportIcao='" + departureAirportIcao + '\'' +
+                ", departureAirportTerminal='" + departureAirportTerminal + '\'' +
+                ", departureAirportGate='" + departureAirportGate + '\'' +
+                ", departureAirportDelay=" + departureAirportDelay +
+                ", departureAirportScheduled=" + departureAirportScheduled +
+                ", departureAirportEstimated=" + departureAirportEstimated +
+                ", departureAirportActual=" + departureAirportActual +
+                ", arrivalAirportId=" + arrivalAirportId +
+                ", arrivalAirportName='" + arrivalAirportName + '\'' +
+                ", arrivalAirportTimezone='" + arrivalAirportTimezone + '\'' +
+                ", arrivalAirportIata='" + arrivalAirportIata + '\'' +
+                ", arrivalAirportIcao='" + arrivalAirportIcao + '\'' +
+                ", arrivalAirportTerminal='" + arrivalAirportTerminal + '\'' +
+                ", arrivalAirportGate='" + arrivalAirportGate + '\'' +
+                ", arrivalAirportBaggage='" + arrivalAirportBaggage + '\'' +
+                ", arrivalAirportDelay=" + arrivalAirportDelay +
+                ", arrivalAirportScheduled=" + arrivalAirportScheduled +
+                ", arrivalAirportEstimated=" + arrivalAirportEstimated +
+                ", arrivalAirportActual=" + arrivalAirportActual +
+                ", airlineName='" + airlineName + '\'' +
+                ", airlineIata='" + airlineIata + '\'' +
+                ", airlineIcao='" + airlineIcao + '\'' +
+                ", flightNumber='" + flightNumber + '\'' +
+                ", flightIata='" + flightIata + '\'' +
+                ", flightIcao='" + flightIcao + '\'' +
+                ", flightCode='" + flightCode + '\'' +
+                ", aircraftTypeId=" + aircraftTypeId +
+                ", aircraftName='" + aircraftName + '\'' +
+                ", aircraftIata='" + aircraftIata + '\'' +
+                ", liveFlightDataId=" + liveFlightDataId +
+                ", liveUpdated=" + liveUpdated +
+                ", liveLatitude=" + liveLatitude +
+                ", liveLongitude=" + liveLongitude +
+                ", liveAltitude=" + liveAltitude +
+                ", liveDirection=" + liveDirection +
+                ", liveSpeedHorizontal=" + liveSpeedHorizontal +
+                ", liveSpeedVertical=" + liveSpeedVertical +
+                ", liveIsGrounded=" + liveIsGrounded +
+                '}';
     }
 }

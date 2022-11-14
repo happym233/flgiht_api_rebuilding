@@ -13,5 +13,5 @@ public interface AirlineMapper {
 
     public List<Airline> getAirlineByIcaoCOdes(String icao);
 
-    public List<Airline> getAirlineByMultipleData(String name, String iata, String icao);
+    public List<Airline> getAirlineByCombination(String name, String iata, String icao);
 }

@@ -46,4 +46,5 @@ public class CityMapperImpl implements CityMapper {
         toSearch.setCityName(cityName);
         return parse(cityGateway.search(toSearch));
     }
+
 }

@@ -28,7 +28,7 @@ public class ControllerTest {
     public void before() throws Exception {
 
         Connection connection = sqliteConnector.getConnection();
-        System.out.println(connection);
+        //System.out.println(connection);
 
     }
 
@@ -42,7 +42,7 @@ public class ControllerTest {
     public void testControllerFactoryCountry() throws Exception{
 
         Controller c = ControllerFactory.create("country");
-        System.out.println(c.handleParameter("country_name=New Zealand"));
+        //System.out.println(c.handleParameter("country_name=New Zealand"));
         assertNotNull(c);
         assertSame("project.Controllers.CountryController", c.getClass().getName());
     }
@@ -51,24 +51,33 @@ public class ControllerTest {
     public void testControllerFactoryCity() throws Exception{
 
         Controller c = ControllerFactory.create("city");
-        System.out.println(c.handleParameter("city_name=Dalian"));
+        //System.out.println(c.handleParameter("city_name=Dalian"));
         assertNotNull(c);
         assertSame("project.Controllers.CityController", c.getClass().getName());
     }
 
 
     @Test
-    public void testControllerFactory() throws Exception{
+    public void testControllerFactoryAirline() throws Exception{
 
         Controller c = ControllerFactory.create("airline");
-        System.out.println(c.handleParameter("airline_name=Sichuan Airlines"));
-        System.out.println(c.handleParameter("icao=QTR"));
-        System.out.println(c.handleParameter("iata=QF"));
+        //System.out.println(c.handleParameter("airline_name=Sichuan Airlines"));
         assertNotNull(c);
         assertSame("project.Controllers.AirlineController", c.getClass().getName());
 
+
     }
 
+    @Test
+    public void testControllerFactoryFlight() throws Exception{
+
+        Controller c = ControllerFactory.create("flight");
+
+        assertNotNull(c);
+        assertSame("project.Controllers.FlightController", c.getClass().getName());
+
+
+    }
 
 
 

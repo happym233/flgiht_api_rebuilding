@@ -9,6 +9,8 @@ import project.Gateway.SqliteConnector;
 
 import java.sql.Connection;
 
+import static org.junit.Assert.assertEquals;
+
 /** 
 * CountryGatewayImpl Tester. 
 * 
@@ -38,7 +40,9 @@ public void after() throws Exception {
 @Test
 public void testSearch() throws Exception { 
 //TODO: Test goes here...
+
     CountryGatewayImpl c = new CountryGatewayImpl();
+      /*
     Country test1 = new Country();
     test1.setCountryName("Austria");
     System.out.println(c.search(  test1  ));
@@ -47,9 +51,14 @@ public void testSearch() throws Exception {
     test2.setCountryName("New Zealand");
     System.out.println(c.search(  test2  ));
 
+
+     */
     Country test3 = new Country();
     test3.setCountryName("China");
-    System.out.println(c.search(  test3  ));
+    //System.out.println(c.search(  test3  ));
+
+    String answer ="[CountryVO{countryName='China', countryIso2='CN', countryIso3='CHN', countryIsoNumeric=156, population=1330044000, capital='Beijing', continent='AS', currencyName='Yuan Renminbi', currencyCode='CNY', fipsCode='CH', phonePrefix='86'}]";
+    assertEquals(c.search(test3).toString(), answer);
 
 
 } 

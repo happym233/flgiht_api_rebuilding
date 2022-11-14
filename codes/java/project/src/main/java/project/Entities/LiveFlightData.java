@@ -1,9 +1,11 @@
 package project.Entities;
 
-import java.sql.Time;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class LiveFlightData {
-    private Time updated;
+    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    private Date updated;
     private Float latitude;
     private Float longitude;
     private Float altitude;
@@ -12,11 +14,15 @@ public class LiveFlightData {
     private Float speedVertical;
     private Boolean isGround;
 
-    public Time getUpdated() {
+    public Date getUpdated() {
         return updated;
     }
 
-    public void setUpdated(Time updated) {
+    public String getUpdatedStr() {
+        return dateFormat.format(updated);
+    }
+
+    public void setUpdated(Date updated) {
         this.updated = updated;
     }
 

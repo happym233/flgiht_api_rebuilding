@@ -3,10 +3,13 @@ package test.project.Mappers.Country;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import project.Entities.Country;
 import project.Gateway.SqliteConnector;
 import project.Mappers.Country.CountryMapperImpl;
 
 import java.sql.Connection;
+
+import static org.junit.Assert.assertEquals;
 
 /** 
 * CountryMapperImpl Tester. 
@@ -39,19 +42,13 @@ public void after() throws Exception {
 public void testGetAllCountries() throws Exception { 
 //TODO: Test goes here...
     CountryMapperImpl a = new CountryMapperImpl();
-    System.out.println(a.getAllCountries( ));
-}
 
-/** 
-* 
-* Method: getCountryByName(String countryName) 
-* 
-*/ 
-@Test
-public void testGetCountryByName() throws Exception { 
-//TODO: Test goes here...
-    CountryMapperImpl a = new CountryMapperImpl();
-    System.out.println(a.getCountryByName("Austria"));
+    //System.out.println(a.getCountryByName("Austria"));
+    String answer = "";
+    for (Country c: a.getCountryByName("Austria")){
+        answer += c.getCountryName();
+    }
+    assertEquals(answer, "Austria");
 } 
 
 } 

@@ -9,8 +9,7 @@ import project.Gateway.SqliteConnector;
 
 import java.sql.Connection;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertSame;
+import static org.junit.Assert.*;
 
 /**
  * SqliteConnector Tester.
@@ -28,7 +27,7 @@ public class ControllerFactoryTest {
     public void before() throws Exception {
 
         Connection connection = sqliteConnector.getConnection();
-        System.out.println(connection);
+        //System.out.println(connection);
 
     }
 
@@ -39,7 +38,7 @@ public class ControllerFactoryTest {
 
         assertNotNull(c);
 
-        assertSame("project.Controllers.CountryController", c.getClass().getName());
+        assertEquals("project.Controllers.CountryController", c.getClass().getName());
     }
 
     @Test
@@ -49,7 +48,7 @@ public class ControllerFactoryTest {
 
         assertNotNull(c);
 
-        assertSame("project.Controllers.CityController", c.getClass().getName());
+        assertEquals("project.Controllers.CityController", c.getClass().getName());
     }
 
 
@@ -60,10 +59,10 @@ public class ControllerFactoryTest {
 
         assertNotNull(c);
 
-        assertSame("project.Controllers.AirlineController", c.getClass().getName());
+        assertEquals("project.Controllers.AirlineController", c.getClass().getName());
     }
 
-/*
+
     @Test
     public void testFlightController() throws Exception{
 
@@ -71,9 +70,9 @@ public class ControllerFactoryTest {
 
         assertNotNull(c);
 
-        assertSame("project.Controllers.FlightController", c.getClass().getName());
+        assertEquals("project.Controllers.FlightController", c.getClass().getName());
     }
-*/
+
     @After
     public void after() throws Exception {
         //

@@ -15,6 +15,8 @@ public class ControllerFactory {
                 return new CityController();
             case "airline":
                 return new AirlineController();
+            case "flight":
+                return new FlightController();
         }
         return null;
     }
