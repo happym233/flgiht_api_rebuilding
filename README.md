@@ -19,6 +19,115 @@ codes:
 1. [database creating sql](/codes/sql/createTable.sql)
 2. [database inserting sql](/codes/sql/insertTable.sql)
 3. [java code](/codes/java)
+
+project structure:
+
+│  pom.xml
+│  project.iml
+│
+└─src
+    ├─main
+    │  ├─java
+    │  │  └─project
+    │  │      │  Configuration.java
+    │  │      │  FlightAPIApplication.java
+    │  │      │  Main.java
+    │  │      │
+    │  │      ├─Controllers
+    │  │      │      AircraftTypeController.java
+    │  │      │      AirlineController.java
+    │  │      │      CityController.java
+    │  │      │      Controller.java
+    │  │      │      ControllerFactory.java
+    │  │      │      CountryController.java
+    │  │      │      FlightController.java
+    │  │      │
+    │  │      ├─Entities
+    │  │      │      ActualAirport.java
+    │  │      │      AircraftType.java
+    │  │      │      Airline.java
+    │  │      │      Airport.java
+    │  │      │      City.java
+    │  │      │      Country.java
+    │  │      │      Flight.java
+    │  │      │      LiveFlightData.java
+    │  │      │      Route.java
+    │  │      │      ScheduledAirport.java
+    │  │      │
+    │  │      ├─Exceptions
+    │  │      │      JsonException.java
+    │  │      │
+    │  │      ├─Gateway
+    │  │      │  │  SqliteConnector.java
+    │  │      │  │
+    │  │      │  ├─Airline
+    │  │      │  │      AirlineGateway.java
+    │  │      │  │      AirlineGatewayImpl.java
+    │  │      │  │
+    │  │      │  ├─City
+    │  │      │  │      CityGateway.java
+    │  │      │  │      CityGatewayImpl.java
+    │  │      │  │
+    │  │      │  ├─Country
+    │  │      │  │      CountryGateway.java
+    │  │      │  │      CountryGatewayImpl.java
+    │  │      │  │
+    │  │      │  └─Flight
+    │  │      │          FlightGateway.java
+    │  │      │          FlightGatewayImpl.java
+    │  │      │
+    │  │      ├─Mappers
+    │  │      │  ├─Airline
+    │  │      │  │      AirlineMapper.java
+    │  │      │  │      AirlineMapperImpl.java
+    │  │      │  │
+    │  │      │  ├─City
+    │  │      │  │      CityMapper.java
+    │  │      │  │      CityMapperImpl.java
+    │  │      │  │
+    │  │      │  ├─Country
+    │  │      │  │      CountryMapper.java
+    │  │      │  │      CountryMapperImpl.java
+    │  │      │  │
+    │  │      │  └─Flight
+    │  │      │          FlightMapper.java
+    │  │      │          FlightMapperImpl.java
+    │  │      │
+    │  │      └─VO
+    │  │              AirlineVO.java
+    │  │              CityVO.java
+    │  │              CountryVO.java
+    │  │              FlightVO.java
+    │  │
+    │  └─resources
+    └─test
+        └─java
+            └─project
+                ├─Controllers
+                │      ControllerFactoryTest.java
+                │      ControllerTest.java
+                │
+                ├─Gateway
+                │  │  SqliteConnectorTest.java
+                │  │
+                │  ├─Airline
+                │  │      AirlineGatewayImplTest.java
+                │  │
+                │  ├─City
+                │  │      CityGatewayImplTest.java
+                │  │
+                │  └─Country
+                │          CountryGatewayImplTest.java
+                │
+                └─Mappers
+                    ├─Airline
+                    │      AirlineMapperImplTest.java
+                    │
+                    ├─City
+                    │      CityMapperImplTest.java
+                    │
+                    └─Country
+                            CountryMapperImplTest.java
  
 Interaction results:
 

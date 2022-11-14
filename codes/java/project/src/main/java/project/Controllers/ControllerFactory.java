@@ -2,10 +2,8 @@ package project.Controllers;
 
 public class ControllerFactory {
 
-
     private ControllerFactory() {
     }
-
 
     public static Controller create(String s) {
         switch (s.toLowerCase()) {
