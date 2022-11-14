@@ -133,6 +133,10 @@ project structure:
  
 Interaction results:
 
+- sample results:
+![searching city by city_name](../figures/sample_results.png)
+
+- detailed results:
 [a record of interactions in terminal](/documents/results/interactions.pdf)
 
 (reference: [https://aviationstack.com/documentation](https://aviationstack.com/documentation))
