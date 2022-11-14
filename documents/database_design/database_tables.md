@@ -1,6 +1,6 @@
 ## Database tables
 
-Countries
+Country
 
 | Variable Name     | Type        |
 |-------------------|:------------|
@@ -17,7 +17,7 @@ Countries
 | fipsCode          | varchar(20) |
 | phonePrefix       | varchar(10) |
 
-Cities
+City
 
 | Variable Name | Type        |
 |---------------|:------------|
@@ -31,7 +31,7 @@ Cities
 | geonameId     | varchar(10) |
 | countryId     | integer     |
 
-Airlines
+Airline
 
 | variable name        | type        |
 |----------------------|:------------|
@@ -49,7 +49,7 @@ Airlines
 | hubCode              | varchar(50) |
 | countryId            | integer     |
 
-Airports
+Airport
 
 | variable name | type        |
 |---------------|:------------|
@@ -58,7 +58,7 @@ Airports
 | iata          | varchar(50) |
 | icao          | varchar(50) |
 
-ScheduledAirports
+ScheduledAirport
 
 | variable name      | type        |
 |--------------------|:------------|
@@ -68,7 +68,7 @@ ScheduledAirports
 | airportId          | integer     |
 
 
-Routes
+Route
 
 | variable name   | type    |
 |-----------------|:--------|
@@ -77,7 +77,7 @@ Routes
 | arriveAirportId | integer |
 | airlineId       | integer |
 
-ActualAirports
+ActualAirport
 
 | variable name      | type        |
 |--------------------|:------------|
@@ -90,7 +90,7 @@ ActualAirports
 | scheduledAirportId | integer     |
 
 
-AircraftTypes
+AircraftType
 
 | variable name  | type         |
 |----------------|:-------------|
@@ -98,7 +98,7 @@ AircraftTypes
 | aircraftName   | varchar(50)  |
 | iataCode       | varchar(50)  |
 
-Flights
+Flight
 
 | variable name    | type        |
 |------------------|:------------|
