@@ -1,18 +1,34 @@
 package project.Entities;
 
-public class Flight {
-     private String flightDate;
-     private String flightStatus;
-     private Integer number;
-     private String iata;
-     private String icao;
-     private String codeShared;
+import project.Configuration;
 
-    public String getFlightDate() {
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Flight {
+
+    private SimpleDateFormat dateFormat = Configuration.getDateFormat();
+    private Date flightDate;
+    private String flightStatus;
+    private String number;
+    private String iata;
+    private String icao;
+    private String codeShared;
+    private Route route;
+    private ActualAirport departureAirport;
+    private ActualAirport arrivalAirport;
+    private AircraftType aircraftType;
+    private LiveFlightData liveFlightData;
+
+    public String getFlightDateStr() {
+        return dateFormat.format(flightDate);
+    }
+
+    public Date getFlightDate() {
         return flightDate;
     }
 
-    public void setFlightDate(String flightDate) {
+    public void setFlightDate(Date flightDate) {
         this.flightDate = flightDate;
     }
 
@@ -24,11 +40,11 @@ public class Flight {
         this.flightStatus = flightStatus;
     }
 
-    public Integer getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(Integer number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
@@ -54,5 +70,45 @@ public class Flight {
 
     public void setCodeShared(String codeShared) {
         this.codeShared = codeShared;
+    }
+
+    public Route getRoute() {
+        return route;
+    }
+
+    public void setRoute(Route route) {
+        this.route = route;
+    }
+
+    public ActualAirport getDepartureAirport() {
+        return departureAirport;
+    }
+
+    public void setDepartureAirport(ActualAirport departureAirport) {
+        this.departureAirport = departureAirport;
+    }
+
+    public ActualAirport getArrivalAirport() {
+        return arrivalAirport;
+    }
+
+    public void setArrivalAirport(ActualAirport arrivalAirport) {
+        this.arrivalAirport = arrivalAirport;
+    }
+
+    public AircraftType getAircraftType() {
+        return aircraftType;
+    }
+
+    public void setAircraftType(AircraftType aircraftType) {
+        this.aircraftType = aircraftType;
+    }
+
+    public LiveFlightData getLiveFlightData() {
+        return liveFlightData;
+    }
+
+    public void setLiveFlightData(LiveFlightData liveFlightData) {
+        this.liveFlightData = liveFlightData;
     }
 }

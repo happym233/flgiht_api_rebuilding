@@ -1,13 +1,18 @@
 package project.Entities;
 
-import java.sql.Time;
+import project.Configuration;
 
-public class ActualAirport {
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class ActualAirport extends ScheduledAirport{
      private String gate;
      private Integer delay;
      private String baggage;
-     private Time estimateTime;
-     private Time actualTime;
+     private Date estimateTime;
+     private Date actualTime;
+
+     private SimpleDateFormat timeFormat = Configuration.getTimeFormat();
 
      public String getGate() {
           return gate;
@@ -33,19 +38,29 @@ public class ActualAirport {
           this.baggage = baggage;
      }
 
-     public Time getEstimateTime() {
+     public Date getEstimateTime() {
           return estimateTime;
      }
 
-     public void setEstimateTime(Time estimateTime) {
+     public String getEstimateTimeStr() {
+          if (estimateTime == null) return "";
+          return timeFormat.format(estimateTime);
+     }
+
+     public void setEstimateTime(Date estimateTime) {
           this.estimateTime = estimateTime;
      }
 
-     public Time getActualTime() {
+     public Date getActualTime() {
           return actualTime;
      }
 
-     public void setActualTime(Time actualTime) {
+     public String getActualTimeStr() {
+          if (actualTime == null) return "";
+          return timeFormat.format(actualTime);
+     }
+
+     public void setActualTime(Date actualTime) {
           this.actualTime = actualTime;
      }
 }

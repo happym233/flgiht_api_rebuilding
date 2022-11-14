@@ -1,16 +1,18 @@
 package project.Entities;
 
 public class Airport {
-    private String airport;
+    private String airportName;
     private String iata;
     private String icao;
 
-    public String getAirport() {
-        return airport;
+    private City city;
+
+    public String getAirportName() {
+        return airportName;
     }
 
-    public void setAirport(String airport) {
-        this.airport = airport;
+    public void setAirportName(String airportName) {
+        this.airportName = airportName;
     }
 
     public String getIata() {
@@ -27,5 +29,13 @@ public class Airport {
 
     public void setIcao(String icao) {
         this.icao = icao;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
     }
 }

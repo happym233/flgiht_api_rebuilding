@@ -67,7 +67,7 @@ public class AirlineMapperImpl implements AirlineMapper{
     }
 
     @Override
-    public List<Airline> getAirlineByMultipleData(String name, String iata, String icao) {
+    public List<Airline> getAirlineByCombination(String name, String iata, String icao) {
         Airline airline = new Airline();
         airline.setAirlineName(name);
         airline.setIataCode(iata);

@@ -65,7 +65,7 @@ public class AirlineController implements Controller{
                     return JsonException.getJsonParameterExceptionMessage();
                 }
             }
-            return toJsonString(airlineMapper.getAirlineByMultipleData(airlineName, iata, icao));
+            return toJsonString(airlineMapper.getAirlineByCombination(airlineName, iata, icao));
         }
     }
 }
