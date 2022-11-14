@@ -3,10 +3,10 @@ soen 6441 project: rebuilding api from [aviationsstack.com](https://aviationstac
 
 APIs to rebuild:
 
-1. [/flight](/documents/APIs/flights.md) 
-2. [/airline](/documents/APIs/airlines.md)
-3. [/citie](/documents/APIs/cities.md)
-4. [/countrie](/documents/APIs/countries.md)
+1. [/flights](/documents/APIs/flights.md) 
+2. [/airlines](/documents/APIs/airlines.md)
+3. [/cities](/documents/APIs/cities.md)
+4. [/countries](/documents/APIs/countries.md)
  
 Design documents:
 
