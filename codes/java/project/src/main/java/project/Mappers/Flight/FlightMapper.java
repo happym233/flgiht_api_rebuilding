@@ -7,6 +7,8 @@ import java.util.List;
 public interface FlightMapper {
     public List<Flight> getAllFlights();
 
+    public List<Flight> getFlightByNumber(String flightNumber);
+
     public List<Flight> getFlightByStatus(String status);
 
     public List<Flight> getAirlineByCombination(String status, String airlineName, String airlineIata,

@@ -41,7 +41,7 @@ public class ControllerTest {
     @Test
     public void testControllerFactoryCountry() throws Exception{
 
-        Controller c = ControllerFactory.create("country");
+        Controller c = ControllerFactory.create("countries");
         //System.out.println(c.handleParameter("country_name=New Zealand"));
         assertNotNull(c);
         assertSame("project.Controllers.CountryController", c.getClass().getName());
@@ -50,7 +50,7 @@ public class ControllerTest {
     @Test
     public void testControllerFactoryCity() throws Exception{
 
-        Controller c = ControllerFactory.create("city");
+        Controller c = ControllerFactory.create("cities");
         //System.out.println(c.handleParameter("city_name=Dalian"));
         assertNotNull(c);
         assertSame("project.Controllers.CityController", c.getClass().getName());
@@ -60,7 +60,7 @@ public class ControllerTest {
     @Test
     public void testControllerFactoryAirline() throws Exception{
 
-        Controller c = ControllerFactory.create("airline");
+        Controller c = ControllerFactory.create("airlines");
         //System.out.println(c.handleParameter("airline_name=Sichuan Airlines"));
         assertNotNull(c);
         assertSame("project.Controllers.AirlineController", c.getClass().getName());
@@ -71,7 +71,7 @@ public class ControllerTest {
     @Test
     public void testControllerFactoryFlight() throws Exception{
 
-        Controller c = ControllerFactory.create("flight");
+        Controller c = ControllerFactory.create("flights");
 
         assertNotNull(c);
         assertSame("project.Controllers.FlightController", c.getClass().getName());

@@ -13,7 +13,6 @@ public class FlightMapperImpl implements FlightMapper{
     public FlightMapperImpl() {
         this.flightGateway = new FlightGatewayImpl();
     }
-
     private List<Flight> parse(List<FlightVO> flightVOs) {
         List<Flight> res = new ArrayList<>();
         for (FlightVO flightVO: flightVOs) {
@@ -81,19 +80,22 @@ public class FlightMapperImpl implements FlightMapper{
         }
         return res;
     }
-
     @Override
     public List<Flight> getAllFlights() {
         return parse(flightGateway.search(null));
     }
-
+    @Override
+    public List<Flight> getFlightByNumber(String number) {
+        Flight flight = new Flight();
+        flight.setNumber(number);
+        return parse(flightGateway.search(flight));
+    }
     @Override
     public List<Flight> getFlightByStatus(String status) {
         Flight flight = new Flight();
         flight.setFlightStatus(status);
         return parse(flightGateway.search(flight));
     }
-
     @Override
     public List<Flight> getAirlineByCombination(String status, String airlineName, String airlineIata, String airlineIcao, String flightNumber, String flightIata, String flightIcao) {
         Airline airline = new Airline();

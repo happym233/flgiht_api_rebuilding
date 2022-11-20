@@ -15,12 +15,16 @@ Design documents:
 3. [database](/documents/database_design/database_tables.md)
 4. [design patterns](/documents/design_documents/design_patterns.md)
  
-codes:
+Codes:
 1. [database creating sql](/codes/sql/createTable.sql)
 2. [database inserting sql](/codes/sql/insertTable.sql)
 3. [java code](/codes/java)
 
-project structure:
+Project presentation:
+[project presentation link](https://drive.google.com/file/d/1rv8v_KC7ylTBFHPG_88uXlA-twvM90h0/view?usp=share_link)
+
+
+Project structure:
 
 ```
 │  pom.xml
