@@ -17,8 +17,7 @@ Design documents:
  
 Codes:
 1. [database creating sql](/codes/sql/createTable.sql)
-2. [database inserting sql](/codes/sql/insertTable.sql)
-3. [java code](/codes/java)
+2. [java code](/codes/java)
 
 Project presentation:
 [project presentation link](https://drive.google.com/file/d/1rv8v_KC7ylTBFHPG_88uXlA-twvM90h0/view?usp=share_link)
